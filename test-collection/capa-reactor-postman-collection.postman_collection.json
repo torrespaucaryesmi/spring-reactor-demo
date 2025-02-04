@@ -1,0 +1,686 @@
+{
+	"info": {
+		"_postman_id": "55cf096f-573d-489e-bb8a-08797ed8a742",
+		"name": "capa-reactor-postman-collection",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "95117"
+	},
+	"item": [
+		{
+			"name": "hotel",
+			"item": [
+				{
+					"name": "bookings",
+					"item": [
+						{
+							"name": "bookings",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "127.0.0.1:9001/app-hotel/api/hotels/bookings",
+									"host": [
+										"127",
+										"0",
+										"0",
+										"1"
+									],
+									"port": "9001",
+									"path": [
+										"app-hotel",
+										"api",
+										"hotels",
+										"bookings"
+									]
+								}
+							},
+							"response": []
+						}
+					]
+				},
+				{
+					"name": "customers",
+					"item": [
+						{
+							"name": "customers",
+							"request": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n  \"name\": \"Jane Smith\",\n  \"email\": \"jane.smith@example.com\",\n  \"phoneNumber\": \"987-654-3210\"\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "127.0.0.1:9001/app-hotel/api/hotels/customers",
+									"host": [
+										"127",
+										"0",
+										"0",
+										"1"
+									],
+									"port": "9001",
+									"path": [
+										"app-hotel",
+										"api",
+										"hotels",
+										"customers"
+									]
+								}
+							},
+							"response": [
+								{
+									"name": "John Doe",
+									"originalRequest": {
+										"method": "POST",
+										"header": [],
+										"body": {
+											"mode": "raw",
+											"raw": "{\n  \"name\": \"John Doe\",\n  \"email\": \"john.doe@example.com\",\n  \"phoneNumber\": \"123-456-7890\"\n}",
+											"options": {
+												"raw": {
+													"language": "json"
+												}
+											}
+										},
+										"url": {
+											"raw": "127.0.0.1:9001/app-hotel/api/hotels/customers",
+											"host": [
+												"127",
+												"0",
+												"0",
+												"1"
+											],
+											"port": "9001",
+											"path": [
+												"app-hotel",
+												"api",
+												"hotels",
+												"customers"
+											]
+										}
+									},
+									"status": "OK",
+									"code": 200,
+									"_postman_previewlanguage": "json",
+									"header": [
+										{
+											"key": "Content-Type",
+											"value": "application/json"
+										},
+										{
+											"key": "Content-Length",
+											"value": "86"
+										}
+									],
+									"cookie": [],
+									"body": "{\n    \"id\": 1,\n    \"name\": \"John Doe\",\n    \"email\": \"john.doe@example.com\",\n    \"phoneNumber\": \"123-456-7890\"\n}"
+								},
+								{
+									"name": "Jane Smith",
+									"originalRequest": {
+										"method": "POST",
+										"header": [],
+										"body": {
+											"mode": "raw",
+											"raw": "{\n  \"name\": \"Jane Smith\",\n  \"email\": \"jane.smith@example.com\",\n  \"phoneNumber\": \"987-654-3210\"\n}",
+											"options": {
+												"raw": {
+													"language": "json"
+												}
+											}
+										},
+										"url": {
+											"raw": "127.0.0.1:9001/app-hotel/api/hotels/customers",
+											"host": [
+												"127",
+												"0",
+												"0",
+												"1"
+											],
+											"port": "9001",
+											"path": [
+												"app-hotel",
+												"api",
+												"hotels",
+												"customers"
+											]
+										}
+									},
+									"status": "OK",
+									"code": 200,
+									"_postman_previewlanguage": "json",
+									"header": [
+										{
+											"key": "Content-Type",
+											"value": "application/json"
+										},
+										{
+											"key": "Content-Length",
+											"value": "90"
+										}
+									],
+									"cookie": [],
+									"body": "{\n    \"id\": 2,\n    \"name\": \"Jane Smith\",\n    \"email\": \"jane.smith@example.com\",\n    \"phoneNumber\": \"987-654-3210\"\n}"
+								}
+							]
+						},
+						{
+							"name": "customers",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "127.0.0.1:9001/app-hotel/api/hotels/customers",
+									"host": [
+										"127",
+										"0",
+										"0",
+										"1"
+									],
+									"port": "9001",
+									"path": [
+										"app-hotel",
+										"api",
+										"hotels",
+										"customers"
+									]
+								}
+							},
+							"response": [
+								{
+									"name": "John Doe",
+									"originalRequest": {
+										"method": "POST",
+										"header": [],
+										"body": {
+											"mode": "raw",
+											"raw": "{\n  \"name\": \"John Doe\",\n  \"email\": \"john.doe@example.com\",\n  \"phoneNumber\": \"123-456-7890\"\n}",
+											"options": {
+												"raw": {
+													"language": "json"
+												}
+											}
+										},
+										"url": {
+											"raw": "127.0.0.1:9001/app-hotel/api/hotels/customers",
+											"host": [
+												"127",
+												"0",
+												"0",
+												"1"
+											],
+											"port": "9001",
+											"path": [
+												"app-hotel",
+												"api",
+												"hotels",
+												"customers"
+											]
+										}
+									},
+									"status": "OK",
+									"code": 200,
+									"_postman_previewlanguage": "json",
+									"header": [
+										{
+											"key": "Content-Type",
+											"value": "application/json"
+										},
+										{
+											"key": "Content-Length",
+											"value": "86"
+										}
+									],
+									"cookie": [],
+									"body": "{\n    \"id\": 1,\n    \"name\": \"John Doe\",\n    \"email\": \"john.doe@example.com\",\n    \"phoneNumber\": \"123-456-7890\"\n}"
+								},
+								{
+									"name": "Jane Smith",
+									"originalRequest": {
+										"method": "POST",
+										"header": [],
+										"body": {
+											"mode": "raw",
+											"raw": "{\n  \"name\": \"Jane Smith\",\n  \"email\": \"jane.smith@example.com\",\n  \"phoneNumber\": \"987-654-3210\"\n}",
+											"options": {
+												"raw": {
+													"language": "json"
+												}
+											}
+										},
+										"url": {
+											"raw": "127.0.0.1:9001/app-hotel/api/hotels/customers",
+											"host": [
+												"127",
+												"0",
+												"0",
+												"1"
+											],
+											"port": "9001",
+											"path": [
+												"app-hotel",
+												"api",
+												"hotels",
+												"customers"
+											]
+										}
+									},
+									"status": "OK",
+									"code": 200,
+									"_postman_previewlanguage": "json",
+									"header": [
+										{
+											"key": "Content-Type",
+											"value": "application/json"
+										},
+										{
+											"key": "Content-Length",
+											"value": "90"
+										}
+									],
+									"cookie": [],
+									"body": "{\n    \"id\": 2,\n    \"name\": \"Jane Smith\",\n    \"email\": \"jane.smith@example.com\",\n    \"phoneNumber\": \"987-654-3210\"\n}"
+								}
+							]
+						}
+					]
+				},
+				{
+					"name": "rooms",
+					"item": [
+						{
+							"name": "room",
+							"protocolProfileBehavior": {
+								"disableBodyPruning": true
+							},
+							"request": {
+								"method": "GET",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n  \"id\": 1,\n  \"roomNumber\": \"101\",\n  \"type\": \"Deluxe\",\n  \"price\": 150.00\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "127.0.0.1:9001/app-hotel/api/hotels/rooms",
+									"host": [
+										"127",
+										"0",
+										"0",
+										"1"
+									],
+									"port": "9001",
+									"path": [
+										"app-hotel",
+										"api",
+										"hotels",
+										"rooms"
+									]
+								}
+							},
+							"response": [
+								{
+									"name": "Suite",
+									"originalRequest": {
+										"method": "POST",
+										"header": [],
+										"body": {
+											"mode": "raw",
+											"raw": "{\n  \"roomNumber\": \"202\",\n  \"type\": \"Suite\",\n  \"price\": 250.00\n}",
+											"options": {
+												"raw": {
+													"language": "json"
+												}
+											}
+										},
+										"url": {
+											"raw": "127.0.0.1:9001/app-hotel/api/hotels/rooms",
+											"host": [
+												"127",
+												"0",
+												"0",
+												"1"
+											],
+											"port": "9001",
+											"path": [
+												"app-hotel",
+												"api",
+												"hotels",
+												"rooms"
+											]
+										}
+									},
+									"status": "OK",
+									"code": 200,
+									"_postman_previewlanguage": "json",
+									"header": [
+										{
+											"key": "Content-Type",
+											"value": "application/json"
+										},
+										{
+											"key": "Content-Length",
+											"value": "56"
+										}
+									],
+									"cookie": [],
+									"body": "{\n    \"id\": 1,\n    \"roomNumber\": \"202\",\n    \"type\": \"Suite\",\n    \"price\": 250\n}"
+								},
+								{
+									"name": "Deluxe",
+									"originalRequest": {
+										"method": "POST",
+										"header": [],
+										"body": {
+											"mode": "raw",
+											"raw": "{\n  \"id\": 1,\n  \"roomNumber\": \"101\",\n  \"type\": \"Deluxe\",\n  \"price\": 150.00\n}",
+											"options": {
+												"raw": {
+													"language": "json"
+												}
+											}
+										},
+										"url": {
+											"raw": "127.0.0.1:9001/app-hotel/api/hotels/rooms",
+											"host": [
+												"127",
+												"0",
+												"0",
+												"1"
+											],
+											"port": "9001",
+											"path": [
+												"app-hotel",
+												"api",
+												"hotels",
+												"rooms"
+											]
+										}
+									},
+									"status": "OK",
+									"code": 200,
+									"_postman_previewlanguage": "json",
+									"header": [
+										{
+											"key": "Content-Type",
+											"value": "application/json"
+										},
+										{
+											"key": "Content-Length",
+											"value": "57"
+										}
+									],
+									"cookie": [],
+									"body": "{\n    \"id\": 1,\n    \"roomNumber\": \"101\",\n    \"type\": \"Deluxe\",\n    \"price\": 150\n}"
+								}
+							]
+						},
+						{
+							"name": "room",
+							"request": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n  \"id\": 1,\n  \"roomNumber\": \"101\",\n  \"type\": \"Deluxe\",\n  \"price\": 150.00\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "127.0.0.1:9001/app-hotel/api/hotels/rooms",
+									"host": [
+										"127",
+										"0",
+										"0",
+										"1"
+									],
+									"port": "9001",
+									"path": [
+										"app-hotel",
+										"api",
+										"hotels",
+										"rooms"
+									]
+								}
+							},
+							"response": [
+								{
+									"name": "Suite",
+									"originalRequest": {
+										"method": "POST",
+										"header": [],
+										"body": {
+											"mode": "raw",
+											"raw": "{\n  \"roomNumber\": \"202\",\n  \"type\": \"Suite\",\n  \"price\": 250.00\n}",
+											"options": {
+												"raw": {
+													"language": "json"
+												}
+											}
+										},
+										"url": {
+											"raw": "127.0.0.1:9001/app-hotel/api/hotels/rooms",
+											"host": [
+												"127",
+												"0",
+												"0",
+												"1"
+											],
+											"port": "9001",
+											"path": [
+												"app-hotel",
+												"api",
+												"hotels",
+												"rooms"
+											]
+										}
+									},
+									"status": "OK",
+									"code": 200,
+									"_postman_previewlanguage": "json",
+									"header": [
+										{
+											"key": "Content-Type",
+											"value": "application/json"
+										},
+										{
+											"key": "Content-Length",
+											"value": "56"
+										}
+									],
+									"cookie": [],
+									"body": "{\n    \"id\": 1,\n    \"roomNumber\": \"202\",\n    \"type\": \"Suite\",\n    \"price\": 250\n}"
+								},
+								{
+									"name": "Deluxe",
+									"originalRequest": {
+										"method": "POST",
+										"header": [],
+										"body": {
+											"mode": "raw",
+											"raw": "{\n  \"id\": 1,\n  \"roomNumber\": \"101\",\n  \"type\": \"Deluxe\",\n  \"price\": 150.00\n}",
+											"options": {
+												"raw": {
+													"language": "json"
+												}
+											}
+										},
+										"url": {
+											"raw": "127.0.0.1:9001/app-hotel/api/hotels/rooms",
+											"host": [
+												"127",
+												"0",
+												"0",
+												"1"
+											],
+											"port": "9001",
+											"path": [
+												"app-hotel",
+												"api",
+												"hotels",
+												"rooms"
+											]
+										}
+									},
+									"status": "OK",
+									"code": 200,
+									"_postman_previewlanguage": "json",
+									"header": [
+										{
+											"key": "Content-Type",
+											"value": "application/json"
+										},
+										{
+											"key": "Content-Length",
+											"value": "57"
+										}
+									],
+									"cookie": [],
+									"body": "{\n    \"id\": 1,\n    \"roomNumber\": \"101\",\n    \"type\": \"Deluxe\",\n    \"price\": 150\n}"
+								}
+							]
+						}
+					]
+				},
+				{
+					"name": "actuator",
+					"item": [
+						{
+							"name": "actuator-health",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "127.0.0.1:9001/app-hotel/actuator/health",
+									"host": [
+										"127",
+										"0",
+										"0",
+										"1"
+									],
+									"port": "9001",
+									"path": [
+										"app-hotel",
+										"actuator",
+										"health"
+									]
+								}
+							},
+							"response": []
+						}
+					]
+				},
+				{
+					"name": "rooms",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n  \"roomNumber\": \"101\",\n  \"type\": \"Suite\",\n  \"price\": 250.00\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "127.0.0.1:9001/app-hotel/api/hotels/rooms",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "9001",
+							"path": [
+								"app-hotel",
+								"api",
+								"hotels",
+								"rooms"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "rooms",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n  \"roomNumber\": \"201\",\n  \"type\": \"Suite\",\n  \"price\": 250.00\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "127.0.0.1:9001/app-hotel/api/hotels/rooms",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "9001",
+							"path": [
+								"app-hotel",
+								"api",
+								"hotels",
+								"rooms"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "nationalize",
+			"item": [
+				{
+					"name": "nationalize",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "127.0.0.1:8080/nationalize?name=anibal",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "8080",
+							"path": [
+								"nationalize"
+							],
+							"query": [
+								{
+									"key": "name",
+									"value": "anibal"
+								}
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		}
+	]
+}
