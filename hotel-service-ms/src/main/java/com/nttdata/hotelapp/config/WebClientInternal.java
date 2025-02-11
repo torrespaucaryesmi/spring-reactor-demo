@@ -10,10 +10,11 @@ import org.springframework.web.reactive.function.client.WebClient;
 public class WebClientInternal {
 
     @Value("${api.internal.nationalize.url}")
-    private String baseNationalizeUrl = "localhost:8080/";
+    private String baseNationalizeUrl;
 
     @Bean
     public WebClient.Builder webClientBuilder() {
+
         return WebClient.builder()
                 .baseUrl(baseNationalizeUrl)
                 .defaultHeaders(headers -> headers.add("User-Agent", "MyApp"))

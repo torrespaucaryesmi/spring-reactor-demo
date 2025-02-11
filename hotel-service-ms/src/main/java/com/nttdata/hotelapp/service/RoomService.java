@@ -1,7 +1,7 @@
 package com.nttdata.hotelapp.service;
 
 import com.nttdata.hotelapp.model.Room;
-import com.nttdata.hotelapp.repository.RoomRepository;
+import com.nttdata.hotelapp.repository.db.RoomRepository;
 import org.springframework.stereotype.Service;
 import reactor.core.publisher.Flux;
 import reactor.core.publisher.Mono;

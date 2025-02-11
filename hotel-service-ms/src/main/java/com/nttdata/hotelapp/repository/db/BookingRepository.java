@@ -1,4 +1,4 @@
-package com.nttdata.hotelapp.repository;
+package com.nttdata.hotelapp.repository.db;
 
 
 import com.nttdata.hotelapp.model.Booking;

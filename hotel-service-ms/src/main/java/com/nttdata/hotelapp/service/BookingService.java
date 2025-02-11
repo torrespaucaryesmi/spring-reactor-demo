@@ -2,7 +2,7 @@ package com.nttdata.hotelapp.service;
 
 
 import com.nttdata.hotelapp.model.Booking;
-import com.nttdata.hotelapp.repository.BookingRepository;
+import com.nttdata.hotelapp.repository.db.BookingRepository;
 import lombok.RequiredArgsConstructor;
 import org.springframework.stereotype.Service;
 import reactor.core.publisher.Flux;
